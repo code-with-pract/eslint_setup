@@ -1,6 +1,10 @@
 FOLLOW These Steps ------->
 npm i eslint --save-dev
 npx eslint --init
+npx lint-staged
+npx husky-init && npm install
+npx husky add .husky/pre-commit "npm test"
+
 Two options 1).Throw file of eslint 2). Direct setup in package.json file
 
 "devDependencies":{
